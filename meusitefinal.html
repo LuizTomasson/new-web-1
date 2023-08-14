@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="meusite.css">
+<title>TechSoud</title>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo"><i class='bx bx-globe'></i>TechSoud</a>
+ 
+        <ul class="navegacao">
+            <li><a href="#">Visão geral</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul><!--navegacao-->
+
+        <div class="header-icons">
+            <a href="teladelogin.html"><i class='bx bx-right-arrow-alt'></i></a>
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+
+        </div><!--header-icons-->
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="https://content.presspage.com/uploads/1500/1920_high-resolution-g233prodigygamingheadsetfob.png?10000" class="one">
+        </div><!--home-img-->
+
+        <div class="home-text">
+
+            <h1>Headphone <br>Gamer</h1>
+            <h5>A maneira inteligente de ouvir</h5>
+            <h3>R$600.99</h3>
+            <a href="#" class="btn">Compre Agora</a>
+
+        </div>
+    </section><!--home-->
+
+    <div class="main">
+        <div class="row">
+            <li><img src="main1.png" onclick="slider('https://content.presspage.com/uploads/1500/1920_high-resolution-g233prodigygamingheadsetfob.png?10000')"></li>
+        </div><!--row-->
+
+        <div class="row2">
+            <li><img src="main2.png" onclick="slider('https://assets.razerzone.com/eeimages/support/products/1603/rzr_kraken_ultimate_render01_2019_resized.png')"></li>
+        </div><!--row2-->
+
+        <div class="row3">
+            <li><img src="main3.png" onclick="slider('https://informaticaipe.com.br/wp-content/uploads/2022/10/H220-1.png')"></li>
+        </div><!--row3-->
+    </div><!--main-->
+
+    <script>
+        function slider (anything){
+            document.querySelector('.one') .src = anything;
+    };
+
+    let menu = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+
+    menu.onclick = () => {
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('open');
+    }
+
+</script>
+
+<footer class="rodape">
+    <div> 
+      <img src="https://cdn.icon-icons.com/icons2/3398/PNG/512/square_facebook_logo_icon_214743.png">
+      <img src="https://freepngimg.com/save/34978-twitter-transparent-background/500x500">
+      <img src="https://www.unipile.com/wp-content/uploads/2022/09/Logo-Instagram-noir-1.png">
+    </div>
+    
+  </footer>
+</body>
+</html>
